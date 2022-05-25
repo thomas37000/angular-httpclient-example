@@ -23,6 +23,11 @@
   margin: 0 10px;
 }
 
+.active {
+  color: lightgreen;
+  text-decoration: underline;
+}
+
 .toolbar #twitter-logo {
   height: 40px;
   margin: 0 8px;
