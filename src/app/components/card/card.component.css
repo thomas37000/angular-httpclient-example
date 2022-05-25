@@ -2,3 +2,12 @@
     width: 200px;
     height: 200px;
 }
+
+/*
+    even => pair
+    odd => impair 
+*/
+
+li:nth-child(even){
+    color: red;
+}
