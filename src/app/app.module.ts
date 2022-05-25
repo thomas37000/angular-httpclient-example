@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
@@ -9,6 +11,7 @@ import { RessourcesComponent } from './components/ressources/ressources.componen
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NextStepsComponent } from './components/next-steps/next-steps.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { NextStepsComponent } from './components/next-steps/next-steps.component
     CardComponent,
     MenuComponent,
     RessourcesComponent,
-    NextStepsComponent
+    NextStepsComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
