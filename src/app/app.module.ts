@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NextStepsComponent } from './components/next-steps/next-steps.component';
 import { UserComponent } from './components/user/user.component';
+import { UsersListComponent } from './components/users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UserComponent } from './components/user/user.component';
     RessourcesComponent,
     NextStepsComponent,
     UserComponent,
+    UsersListComponent,
   ],
   imports: [
     BrowserModule,
