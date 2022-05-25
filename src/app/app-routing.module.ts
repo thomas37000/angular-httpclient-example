@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NextStepsComponent } from './components/next-steps/next-steps.component';
 import { RessourcesComponent } from './components/ressources/ressources.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-    { path: 'ressources', component: RessourcesComponent }
+    { path: '', component: LandingPageComponent },
+    { path: 'ressources', component: RessourcesComponent },
+    { path: 'next-steps', component: NextStepsComponent },
 ];
 
 @NgModule({
@@ -14,6 +18,6 @@ const routes: Routes = [
       RouterModule
     ]
   })
-  
+
 export class AppRoutingModule {}
 

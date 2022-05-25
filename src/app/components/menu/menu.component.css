@@ -1,3 +1,7 @@
+.toolbar, .menu-links {
+  color: #fff;
+}
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -7,12 +11,16 @@
   display: flex;
   align-items: center;
   background-color: #1976d2;
-  color: white;
   font-weight: 600;
 }
 
 .toolbar img {
   margin: 0 16px;
+}
+
+.menu-links {
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .toolbar #twitter-logo {
