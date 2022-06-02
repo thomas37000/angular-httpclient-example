@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
@@ -15,6 +16,8 @@ import { UserComponent } from './components/user/user.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
 import { IssComponent } from './components/iss/iss.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,8 @@ import { ContactComponent } from './components/contact/contact.component';
     UsersListComponent,
     IssComponent,
     ContactComponent,
+    MessagesComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,7 @@ import { ContactComponent } from './components/contact/contact.component';
     AppRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
