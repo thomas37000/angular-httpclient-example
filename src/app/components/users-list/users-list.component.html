@@ -1,5 +1,4 @@
-<h2>Personnes actives :</h2>
+<div class="user-list-container">
+    <div *ngFor="let user of usersList" class="userList">{{ user.name | titlecase }}</div>
+</div>
 
-<div>Pierre</div>
-<div>Paul</div>
-<div>Jack</div>

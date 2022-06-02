@@ -1,36 +1,18 @@
 <div class="main-messages">
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <mat-card-title>Pierre à ecrit le ...</mat-card-title>
+  <div *nfor="let message of messages">
+    {{ message }}
+    <mat-card class="example-card">
+      <mat-card-title-group>
+        <mat-card-title>Pierre à ecrit le ...</mat-card-title>
 
-      <img
-        mat-card-sm-image
-        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      />
-    </mat-card-title-group>
-    <mat-card-content> Lorem </mat-card-content>
-  </mat-card>
+        <img
+          mat-card-sm-image
+          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        />
+      </mat-card-title-group>
+      <mat-card-content> Lorem </mat-card-content>
+    </mat-card>
+  </div>
 
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <mat-card-title>Paul à ecrit le ...</mat-card-title>
-
-      <img
-        mat-card-sm-image
-        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      />
-    </mat-card-title-group>
-    <mat-card-content> Ipsum </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <mat-card-title>Jack à ecrit le ...</mat-card-title>
-
-      <img   
-        mat-card-sm-image
-        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      />
-    </mat-card-title-group>
-    <mat-card-content> Hello </mat-card-content>
-  </mat-card>
+  <app-users-list></app-users-list>
 </div>

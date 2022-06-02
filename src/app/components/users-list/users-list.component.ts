@@ -7,16 +7,14 @@ import { User } from 'src/app/model/user';
   styleUrls: ['./users-list.component.css'],
 })
 export class UsersListComponent implements OnInit {
-  usersList!: User[];
+  public usersList!: any[];
 
-  constructor() {}
-
-  ngOnInit(): void {
+  constructor() {
     this.usersList = [
       {
-        id: 1,
-        name: 'Thomas',
+        name: 'thomas',
         devLanguage: 'Java - Angular',
+        id: 1,
         startProgramming: 2018,
         age: 41,
         location: 'Nantes',
@@ -42,7 +40,9 @@ export class UsersListComponent implements OnInit {
         location: 'Washington',
         avatar:
           'https://upload.wikimedia.org/wikipedia/commons/a/af/Bill_Gates_-_Nov._8%2C_2019.jpg',
-      }
+      },
     ];
   }
+
+  ngOnInit(): void {}
 }
