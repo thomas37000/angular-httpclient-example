@@ -13,6 +13,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NextStepsComponent } from './components/next-steps/next-steps.component';
 import { UserComponent } from './components/user/user.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { IssComponent } from './components/iss/iss.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { UsersListComponent } from './components/users-list/users-list.component
     NextStepsComponent,
     UserComponent,
     UsersListComponent,
+    IssComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
