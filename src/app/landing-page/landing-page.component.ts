@@ -11,11 +11,11 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onClickRessources() {
+  public onClickRessources(): void {
     this.router.navigateByUrl('ressources');
   }
 
-  onClickNext() {
+  public onClickNext(): void {
     this.router.navigateByUrl('next-steps');
   }
 }

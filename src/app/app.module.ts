@@ -18,6 +18,7 @@ import { IssComponent } from './components/iss/iss.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FormComponent } from './components/form/form.component';
     ContactComponent,
     MessagesComponent,
     FormComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

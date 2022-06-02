@@ -3,7 +3,11 @@
     <mat-form-field appearance="fill"
       >De :
       <mat-label></mat-label>
-      <input matInput placeholder="John Doe" class="input-de" />
+      <input matInput placeholder="John Doe" type="text" class="input-de" />
+      <p *ngIf="errorUser === null" class="errorForm">
+        {{ errorUser }}
+      </p>
+      
     </mat-form-field>
   </div>
 
@@ -11,7 +15,10 @@
     <mat-form-field appearance="fill"
       >Message :
       <mat-label></mat-label>
-      <input matInput placeholder="" class="input-message" />
+      <input matInput placeholder="" type="text" class="input-message" />
+      <p *ngIf="errorMessage === null" class="errorForm">
+        {{ errorMessage }}
+      </p>
     </mat-form-field>
   </div>
 </form>
