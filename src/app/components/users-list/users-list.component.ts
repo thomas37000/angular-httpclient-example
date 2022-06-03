@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Personne } from 'src/app/model/Personne';
 import { User } from 'src/app/model/User';
 import { Users } from 'src/app/model/Users';
+import { AllDatasService } from 'src/app/services/all-datas.service';
 
 @Component({
   selector: 'app-users-list',
@@ -9,20 +10,22 @@ import { Users } from 'src/app/model/Users';
   styleUrls: ['./users-list.component.css'],
 })
 export class UsersListComponent implements OnInit {
- // public usersList: any[];
- // public usersList: User[];
+  // public usersList: any[];
+  // public usersList: User[];
 
-//  public usersList: Users[];
- public personnes: Personne[];
+  //  public usersList: Users[];
 
-  constructor() {
+  public personnes!: Personne[];
 
-    this.personnes = [
-      new Personne("Morane", "Bob"),
-      new Personne("al'Thor", "Rand"),
-    ];
+  constructor(private svc: AllDatasService) {
+    this.personnes = this.svc.getAuteurs();
 
-    // this.usersList = [  
+    // this.personnes = [
+    //   new Personne("Morane", "Bob"),
+    //   new Personne("al'Thor", "Rand"),
+    // ];
+
+    // this.usersList = [
     //   {
     //     id: 1,
     //     name: 'thomas',

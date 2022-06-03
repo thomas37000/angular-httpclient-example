@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllDatasService } from 'src/app/services/all-datas.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,10 +10,14 @@ export class ContactComponent implements OnInit {
   public contact!: string;
   public email!: string;
 
-  constructor() {}
+  constructor(private svc: AllDatasService) {}
 
   ngOnInit(): void {
     this.contact = 'Messagerie';
     this.email = 'thomas.chalanson@gmail.com';
+  }
+
+  public addCount(): void {
+    this.svc.countService();
   }
 }

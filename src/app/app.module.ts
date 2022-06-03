@@ -20,6 +20,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AllDatasService } from './services/all-datas.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatInputModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AllDatasService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
