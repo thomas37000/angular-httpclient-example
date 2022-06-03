@@ -1,4 +1,11 @@
-<div class="user-list-container">
-    <div *ngFor="let user of usersList" class="userList">{{ user.name | titlecase }}</div>
-</div>
+<!-- <div class="user-list-container">
+    <div *ngFor="let user of usersList; let index = index" class="userList">{{ user.name | titlecase }}</div>
+</div> -->
 
+<p *ngIf="personnes.length == 0">Il n'y a aucune personnes actives</p>
+
+<ul *ngIf="personnes.length > 0">
+  <li *ngFor="let personne of personnes">
+    {{ personne.toString() }}
+  </li>
+</ul>
