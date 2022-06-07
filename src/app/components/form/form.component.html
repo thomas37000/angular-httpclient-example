@@ -1,9 +1,23 @@
-<form class="material-form">
+<form
+  class="material-form"
+  #msgForm="ngForm"
+  (ngSubmit)="onSubmit(msgForm.value); msgForm.reset()"
+  novalidate
+>
   <div class="example-container">
     <mat-form-field appearance="fill"
       >De :
       <mat-label></mat-label>
-      <input matInput placeholder="John Doe" type="text" class="input-de" />
+      <input
+        matInput
+        placeholder="John"
+        type="text"
+        class="input-de"
+        ngModel
+        required
+        name="auteur"
+        id="auteur"
+      />
       <p *ngIf="errorUser === null" class="errorForm">
         {{ errorUser }}
       </p>
@@ -14,7 +28,15 @@
     <mat-form-field appearance="fill"
       >Message :
       <mat-label></mat-label>
-      <input matInput placeholder="" type="text" class="input-message" />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        class="input-de"
+        ngModel
+        required
+      ></textarea>
       <p *ngIf="errorMessage === null" class="errorForm">
         {{ errorMessage }}
       </p>

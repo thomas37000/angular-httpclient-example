@@ -7,13 +7,15 @@ import { ContactComponent } from './components/contact/contact.component';
 import { UserComponent } from './components/user/user.component';
 import { IssComponent } from './components/iss/iss.component';
 
+
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'ressources', component: RessourcesComponent },
   { path: 'next-steps', component: NextStepsComponent },
   { path: 'user', component: UserComponent },
   { path: 'iss', component: IssComponent },
-  { path: 'contact', component: ContactComponent  },
+  { path: 'contact', component: ContactComponent },
+
 ];
 
 @NgModule({

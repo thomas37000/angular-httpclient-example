@@ -8,7 +8,7 @@ import { Personne } from '../model/Personne';
 export class AllDatasService {
   public count: number;
 
-  public messages!: MessageLabel[];
+  public messages: MessageLabel[];
 
   constructor() {
     this.count = 0;
@@ -27,19 +27,22 @@ export class AllDatasService {
     console.log(this.count++);
   }
 
-  public getMessages(): MessageLabel[]{
+  public getMessages(): MessageLabel[] {
     return this.messages;
   }
 
-  public getAuteurs(): Personne[]{
+  public getAuteurs(): Personne[] {
     let auteurs: Personne[];
     auteurs = [];
-    
-    for(const msg of this.messages){
-      auteurs.push(msg.auteur)
+
+    for (const msg of this.messages) {
+      auteurs.push(msg.auteur);
     }
 
     return auteurs;
   }
 
+  public addMessage(newMsg: MessageLabel): void {
+    this.messages.push(newMsg);
+  }
 }
