@@ -45,4 +45,21 @@ export class AllDatasService {
   public addMessage(newMsg: MessageLabel): void {
     this.messages.push(newMsg);
   }
+
+  public searchArr(val: any): MessageLabel[] {
+    // let newArr : MessageLabel[];// => je déclare un nouveau tableau
+    // newArr = []; // => je l'initialise à vide
+
+    let newArr: MessageLabel[] = []; // meilleur synthaxe
+
+    for (const msg of this.messages) {
+      // si la valeur que je cherche est dans le corps du message en cours
+      if (msg.corps.search(val) !== -1) {
+        // j'ajoute le message entier au nouveau tableau
+        newArr.push(msg);
+      }
+    }
+
+    return newArr;
+  }
 }

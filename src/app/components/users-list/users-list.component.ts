@@ -10,11 +10,6 @@ import { AllDatasService } from 'src/app/services/all-datas.service';
   styleUrls: ['./users-list.component.css'],
 })
 export class UsersListComponent implements OnInit {
-  // public usersList: any[];
-  // public usersList: User[];
-
-  //  public usersList: Users[];
-
   public personnes!: Personne[];
 
   constructor(private svc: AllDatasService) {
